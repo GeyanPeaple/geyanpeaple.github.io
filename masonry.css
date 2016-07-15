@@ -1,25 +1,163 @@
 *{
-  margin:0; padding:0; box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 html,body{
- background:#fff;
- min-height:90%;
+    height:100%;
 }
-.wrapper{
-  width:100%;
-  max-width:1290px;
-  box-shadow:0 0 1px rgba(0,0,0,.4);
-  min-height:400px;
-  margin:10px auto;
-  column-count:5;
-  -webkit-column-count:5;
-  -moz-column-count:5;
+header{
+    width:100%;
+    min-height:150px;
+    background:;
+    position: relative;
+    padding-bottom:80px;
 }
-.item{
- width:250px;
- min-height:20px;
- background:lightgreen;
- margin:10px;
- padding:20px;
- text-align:justify;
+menu{
+    display: table;
+    margin:auto;
+    position:absolute;
+    bottom:0;
+    border-bottom:4px solid #909090;
+    border-radius:50%;
+    padding-bottom:30px;
+}
+menu ul{
+    display:table-row;
+}
+menu ul li{
+    display: table-cell;
+    vertical-align:bottom;
+    position:relative;
+}
+menu ul li:after{
+   content:''; 
+   display:block;
+   width:0;
+   height:4px;
+   background: #ccc;
+   border-radius:40%;
+   position: absolute;
+   left:50%; bottom:0;
+    transition:.5s;
+}
+menu ul li:hover:after{
+   content:''; 
+   display:block;
+   width:70%;
+   height:3px;
+   background: #ccc;
+   border-radius:40%;
+   position: absolute;
+   left:10%; bottom:0;
+}
+menu ul li a{
+    display:table-cell;
+    width:1000px;
+    text-align:center;
+    height:50px;
+    vertical-align: middle;
+    font-family: 'Marck Script', cursive;
+    font-size:20px ;
+    color:#909090;
+}
+main{
+    width:90%;
+    margin:30px auto;
+    padding-bottom:50px;
+}
+footer{
+    width:100%;
+    height:50px;
+    background:#eee;
+    border-top:4px solid #909090;
+    border-radius:50% 50% 0 0;
+    line-height:50px;
+}
+footer p,span{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Underdog', cursive;
+    color:#909090;
+}
+.header_content{
+    display: table-cell;
+    height:150px;
+    background:;
+    vertical-align:baseline;
+    padding-left:80px;
+}
+.header_content h1{
+    font-family: 'Ruslan Display', cursive;
+    color:#909090;
+}
+.header_content p{
+    font-family: 'Underdog', cursive;
+    color:#909090;
+}
+/*    main   */
+
+main{
+    width:90%;
+    margin:40px auto;
+    background:#fff;
+    min-height: 300px;
+    padding:10px 0;
+    position:relative;
+}
+.post{
+    width:100%;
+    background:;
+    height: 300px;
+    position:relative;
+    z-index: 0;
+}
+.post .iframe_block,.post_wrapper {
+    width:100%;
+    height:300px;
+    position:absolute;
+}
+
+.post >.iframe_block > iframe{
+    display:block;
+    width:100%;
+    height:300px;
+    opacity:.9;
+    
+}
+.iframe_block{
+    top:0;
+    left:0;
+    z-index:5;
+}
+.post > .post_wrapper {
+    background:#991199 url(../images/tol.jpg);
+    background-size: 100% 100%;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.yl{
+    display:block;
+    width:150px;
+    height:60px;
+    margin:100px auto;
+    background:rgba(0,0,0,.8);
+    border-radius:40%;
+}
+section{
+    width:100%;
+    margin:40px auto;
+    background:#eee;
+    min-height: 300px;
+    padding:30px 0;
+}
+section p{
+    font-size: 20px;
+    display:block;
+    width:90%;
+    margin:30px auto;
+    
 }
