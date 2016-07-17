@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Respunsive menu jquery</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-	 <header> 
- <h3> Это заголовок сайта</h3>
-  <p>это слоган сайта</p>
-  <p class="show">menu</p>
-<menu> 
-  <ul> 
-    <li><a href="">Главная</a></li>
-    <li><a href="">Гостевая</a></li>
-    <li><a href="">Наш адресс</a></li>
-    <li><a href="">О нас</a></li>
-    <span>Закрыть</span>
-  </ul>
-</menu>
-</header>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>
-
-    $(document).ready(function(){
-    $(".show").click(function(){
-        $("menu").show();
+  <header>
+    <div class="bar">X</div>
+    <menu>
+       <div class="link"><a href="#">Ссылка №1</a></div>
+       <div class="link"><a href="#">Ссылка №2</a></div>
+       <div class="link"><a href="#">Ссылка №3</a></div>
+       <div class="link"><a href="#">Ссылка №4</a></div>
+       <div class="link"><a href="#">Ссылка №5</a></div>
+       <div class="link"><a href="#">Ссылка №6</a></div>
+    </menu>
+  </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script>
+$(document).ready(function(){
+    $(".bar").click(function(){
+        $("menu").toggleClass("block");
     });
-    $("menu ul span").click(function(){
-        $("menu").hide();
+    $("#show").click(function(){
+        $("p").show();
     });
-   });
+});
 </script>
 </body>
 </html>
