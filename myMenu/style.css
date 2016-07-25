@@ -32,7 +32,8 @@ menu ul li div.menu{
     width:600px;
     min-height:400px;
     position:absolute;
-    top:30px;
+    top:28px;
+    border:10px solid transparent;
     left:0;
     background:#fff;
     display:none;
