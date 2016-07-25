@@ -35,7 +35,7 @@ menu ul li div.menu{
     top:30px;
     left:0;
     background:#fff;
-    display:non;
+    display:none;
     transition:all .5s;
     overflow:;
 }
