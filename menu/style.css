@@ -75,8 +75,7 @@ menu a:hover{
 	}
 	
 	.block{
-		left:0;
-		top:0;
+		display:block;
 		z-index: 9;
 	}
 	.link{
